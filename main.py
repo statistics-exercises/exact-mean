@@ -2,27 +2,35 @@ import numpy as np
 
 def bernoulli(p) : 
   # Insert code for calculating and returning the expectation of a Bernoulli random variable here
+  return p
 
 def binomial(n, p) : 
   # Insert code for calculating and returning the expectation of a binomial random variable here 
+  return n*p
 
 def geometric(p) : 
   # Insert code for calculating and returning the expectation of a geometric random variable here
+  return 1/p
 
 def negative_binomial(r, p) : 
   # Insert code for calculating and returning the expectation of a negative binomial random variable here
+  return r/p
 
 def uniform_continuous(a, b) : 
   # Insert code for calculating and returning the expectation of a uniform continuous random variable here  
+  return (a+b)/2
 
 def uniform_discrete(a,b) : 
   # Insert code for calculating and returning the expectation of a uniform discrete random variable here
+  return (a+b)/2
 
 def exponential(lam) : 
   # Insert code for calculating and returning the expectation of a exponential random variable here
+  return 1/lam
 
 def normal(mu, sigma) : 
   # Insert code for calculating and returning the expectation of a Normal random variable here
+  return mu
 
 
 print("The expectation for a Bernoulli random variable with p=0.5 is", bernoulli(0.5) )
